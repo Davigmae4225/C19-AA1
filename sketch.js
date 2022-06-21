@@ -6,11 +6,11 @@ var invisibleBlockGroup, invisibleBlock;
 var gameState = "play"
 
 function preload(){
-  towerImg = loadImage("tower.png");
+  towerImg = loadImage("fundo.jpg");
   doorImg = loadImage("door.png");
   climberImg = loadImage("climber.png");
-  ghostImg = loadImage("ghost-standing.png");
-  spookySound = loadSound("spooky.wav");
+  ghostImg = loadImage("mario_em_pe.png");
+  spookySound = loadSound("mario_som.mp3");
 }
 
 function setup(){
@@ -25,7 +25,7 @@ function setup(){
   invisibleBlockGroup = new Group();
   
   ghost = createSprite(200,200,50,50);
-  ghost.scale = 0.3;
+  ghost.scale = 0.1;
   ghost.addImage("ghost", ghostImg);
 }
 
